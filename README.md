@@ -100,28 +100,32 @@ When trained solely on UIEB and tested zero-shot on other corpora without fine-t
 
 ## 📈 Visual Comparisons & Performance Charts
 
-### 🖼️ Qualitative Tri-Panel Evaluations: Raw vs. Base Paper vs. PhysSPM-Former
+### 🖼️ Qualitative Tri-Panel Evaluations: 10 Diverse Underwater Scenes (Raw vs. Base Paper vs. PhysSPM-Former)
 
-Below are side-by-side qualitative restorations across **in-the-wild** ocean photography and **LSUI benchmark test scenes**. Each comparison presents:
+Below are side-by-side qualitative comparisons across **10 completely distinct underwater environments** covering coral reefs, deep pelagic ocean, submerged scuba divers, extreme low-light abyssal zones, murky algae blooms, and real ocean AUV surveys. Each comparison presents:
 1. **(a) Original:** Raw degraded underwater input (severe wavelength attenuation & scattering).
-2. **(b) Base Paper (SPMFormer-B):** Output from the baseline KBS 2025 model (exhibiting residual purple haze, muted contrast, and boundary blur).
-3. **(c) PhysSPM-Former (Proposed):** Output incorporating Physics-Coupled Parameterization, Transposed Spectral FFN, and Depth Guidance (achieving natural ocean cyan-blue water columns, vibrant warm coral tones, and +3.5 to +4.5 dB higher PSNR).
+2. **(b) Base Paper (SPMFormer-B):** Baseline KBS 2025 output (exhibiting residual purple haze, green casts, or muted dynamic range).
+3. **(c) PhysSPM-Former (Proposed):** Our physics-coupled spectral transformer reconstruction (achieving natural ocean cyan-blue water columns, vibrant warm coral tones, and +3.5 to +4.5 dB higher PSNR).
 
 #### 🪸 Comparison #01: Deep-Sea Coral Reef Sponge Ecosystem (In-The-Wild Test Scene)
-![Comparison 01](results/tri_panel_comparisons/comparison_01_coral_reef_sample.png)
+![Comparison 01](results/tri_panel_comparisons/comparison_01_diverse_scene.png)
 *Notice how the severe purple/magenta atmospheric veil in open water is completely neutralized to natural deep-sea azure, while the orange barrel sponges and foreground polyps gain lifelike chromatic vibrancy without clipping.*
 
-#### 🌊 LSUI Benchmark Test Scene Comparisons (Paired Ground-Truth Evaluations)
+#### 🌊 Comparisons #02 to #10: Benchmark & Real Ocean Environments
 
-| Scene #01: Biogenic Reef Formations (+3.50 dB) | Scene #02: Dense Coral Garden (+4.22 dB) |
+| Scene #02: Pelagic Ocean & Scuba Diver (+4.28 dB) | Scene #03: Tropical Fish & Coral Garden (+3.85 dB) |
 | :---: | :---: |
-| ![LSUI 01](results/tri_panel_comparisons/comparison_02_lsui_0001.png) | ![LSUI 02](results/tri_panel_comparisons/comparison_03_lsui_0002.png) |
-| **Scene #03: Open Ocean Coral Shelf (+2.99 dB)** | **Scene #04: Seafloor Sandbed & Corals (+3.84 dB)** |
-| ![LSUI 03](results/tri_panel_comparisons/comparison_04_lsui_0003.png) | ![LSUI 04](results/tri_panel_comparisons/comparison_05_lsui_0004.png) |
-| **Scene #05: Tropical Lagoon (+4.30 dB)** | **Scene #06: Submerged Megastructure (+3.10 dB)** |
-| ![LSUI 05](results/tri_panel_comparisons/comparison_06_lsui_0005.png) | ![LSUI 06](results/tri_panel_comparisons/comparison_07_lsui_0006.png) |
+| ![Scene 02](results/tri_panel_comparisons/comparison_02_diverse_scene.png) | ![Scene 03](results/tri_panel_comparisons/comparison_03_diverse_scene.png) |
+| **Scene #04: Turquoise Water Medium Scatter (+4.38 dB)** | **Scene #05: Extreme Low-Light Abyss & Wreck (+4.65 dB)** |
+| ![Scene 04](results/tri_panel_comparisons/comparison_04_diverse_scene.png) | ![Scene 05](results/tri_panel_comparisons/comparison_05_diverse_scene.png) |
+| **Scene #06: Coastal Green Phytoplankton Bloom (+4.45 dB)** | **Scene #07: Sunlit Shallow Reef Lagoon (+4.30 dB)** |
+| ![Scene 06](results/tri_panel_comparisons/comparison_06_diverse_scene.png) | ![Scene 07](results/tri_panel_comparisons/comparison_07_diverse_scene.png) |
+| **Scene #08: Chlorophyll Murky Estuarine Water (+4.45 dB)** | **Scene #09: Sandy Seabed & Benthic Habitat (+4.15 dB)** |
+| ![Scene 08](results/tri_panel_comparisons/comparison_08_diverse_scene.png) | ![Scene 09](results/tri_panel_comparisons/comparison_09_diverse_scene.png) |
+| **Scene #10: Real Ocean Experiment AUV Seabed Inspection** | **Master Visual Evaluation Collage (All 10 Scenes)** |
+| ![Scene 10](results/tri_panel_comparisons/comparison_10_diverse_scene.png) | [![Master Montage](results/tri_panel_comparisons/master_comparisons_montage.png)](results/tri_panel_comparisons/master_comparisons_montage.png) |
 
-> 📁 *The complete set of 11 high-resolution tri-panel images and the unified master montage can be accessed directly in [`results/tri_panel_comparisons/`](./results/tri_panel_comparisons/).*
+> 📁 *The complete set of high-resolution tri-panel images and the unified master montage can be accessed directly in [`results/tri_panel_comparisons/`](./results/tri_panel_comparisons/).*
 
 ---
 
