@@ -1,0 +1,341 @@
+================================================================================
+SPMFormer Training Session (Knowledge-Based Systems, 2025)
+Model: SPMFormer-B (Base) | Dataset: LSUI | Optimizer: AdamW | CosineAnnealingLR
+Initial LR: 2.00e-04 | Batch Size: 8 | Patch Size: 256x256 | Total Epochs: 300
+Loss Config: 1.0*L1 + 0.01*L_RGB + 0.01*L_LAB + 0.01*L_Fourier
+================================================================================
+Epoch [001/300] | LR: 2.00e-04 | Loss_Total: 0.7791 | L1: 0.7204 | L_RGB: 2.0029 | L_LAB: 2.6388 | L_Fourier: 1.2279
+   >>> [Validation @ Epoch 001] PSNR: 17.56 dB | SSIM: 0.5837 | Model Checkpoint Saved!
+Epoch [002/300] | LR: 2.00e-04 | Loss_Total: 0.7703 | L1: 0.7121 | L_RGB: 1.9932 | L_LAB: 2.6012 | L_Fourier: 1.2201
+Epoch [003/300] | LR: 2.00e-04 | Loss_Total: 0.7667 | L1: 0.7092 | L_RGB: 1.9655 | L_LAB: 2.5775 | L_Fourier: 1.2061
+Epoch [004/300] | LR: 2.00e-04 | Loss_Total: 0.7592 | L1: 0.7021 | L_RGB: 1.9561 | L_LAB: 2.5706 | L_Fourier: 1.1876
+Epoch [005/300] | LR: 2.00e-04 | Loss_Total: 0.7500 | L1: 0.6934 | L_RGB: 1.9286 | L_LAB: 2.5506 | L_Fourier: 1.1796
+Epoch [006/300] | LR: 2.00e-04 | Loss_Total: 0.7426 | L1: 0.6867 | L_RGB: 1.9103 | L_LAB: 2.5178 | L_Fourier: 1.1650
+Epoch [007/300] | LR: 2.00e-04 | Loss_Total: 0.7383 | L1: 0.6826 | L_RGB: 1.9021 | L_LAB: 2.5078 | L_Fourier: 1.1541
+Epoch [008/300] | LR: 2.00e-04 | Loss_Total: 0.7277 | L1: 0.6726 | L_RGB: 1.8862 | L_LAB: 2.4839 | L_Fourier: 1.1428
+Epoch [009/300] | LR: 2.00e-04 | Loss_Total: 0.7247 | L1: 0.6701 | L_RGB: 1.8657 | L_LAB: 2.4581 | L_Fourier: 1.1299
+Epoch [010/300] | LR: 1.99e-04 | Loss_Total: 0.7133 | L1: 0.6594 | L_RGB: 1.8427 | L_LAB: 2.4273 | L_Fourier: 1.1199
+   >>> [Validation @ Epoch 010] PSNR: 18.63 dB | SSIM: 0.6114 | Model Checkpoint Saved!
+Epoch [011/300] | LR: 1.99e-04 | Loss_Total: 0.7120 | L1: 0.6585 | L_RGB: 1.8283 | L_LAB: 2.4142 | L_Fourier: 1.1093
+Epoch [012/300] | LR: 1.99e-04 | Loss_Total: 0.7012 | L1: 0.6483 | L_RGB: 1.8090 | L_LAB: 2.3912 | L_Fourier: 1.0931
+Epoch [013/300] | LR: 1.99e-04 | Loss_Total: 0.6991 | L1: 0.6464 | L_RGB: 1.8044 | L_LAB: 2.3777 | L_Fourier: 1.0874
+Epoch [014/300] | LR: 1.99e-04 | Loss_Total: 0.6918 | L1: 0.6397 | L_RGB: 1.7783 | L_LAB: 2.3628 | L_Fourier: 1.0736
+Epoch [015/300] | LR: 1.99e-04 | Loss_Total: 0.6854 | L1: 0.6337 | L_RGB: 1.7736 | L_LAB: 2.3313 | L_Fourier: 1.0591
+Epoch [016/300] | LR: 1.99e-04 | Loss_Total: 0.6756 | L1: 0.6244 | L_RGB: 1.7503 | L_LAB: 2.3215 | L_Fourier: 1.0542
+Epoch [017/300] | LR: 1.98e-04 | Loss_Total: 0.6679 | L1: 0.6172 | L_RGB: 1.7360 | L_LAB: 2.2939 | L_Fourier: 1.0382
+Epoch [018/300] | LR: 1.98e-04 | Loss_Total: 0.6625 | L1: 0.6122 | L_RGB: 1.7177 | L_LAB: 2.2850 | L_Fourier: 1.0284
+Epoch [019/300] | LR: 1.98e-04 | Loss_Total: 0.6587 | L1: 0.6089 | L_RGB: 1.7081 | L_LAB: 2.2541 | L_Fourier: 1.0230
+Epoch [020/300] | LR: 1.98e-04 | Loss_Total: 0.6552 | L1: 0.6059 | L_RGB: 1.6857 | L_LAB: 2.2378 | L_Fourier: 1.0072
+   >>> [Validation @ Epoch 020] PSNR: 19.68 dB | SSIM: 0.6349 | Model Checkpoint Saved!
+Epoch [021/300] | LR: 1.98e-04 | Loss_Total: 0.6470 | L1: 0.5982 | L_RGB: 1.6746 | L_LAB: 2.2100 | L_Fourier: 0.9967
+Epoch [022/300] | LR: 1.97e-04 | Loss_Total: 0.6429 | L1: 0.5945 | L_RGB: 1.6555 | L_LAB: 2.1931 | L_Fourier: 0.9881
+Epoch [023/300] | LR: 1.97e-04 | Loss_Total: 0.6376 | L1: 0.5895 | L_RGB: 1.6408 | L_LAB: 2.1851 | L_Fourier: 0.9802
+Epoch [024/300] | LR: 1.97e-04 | Loss_Total: 0.6273 | L1: 0.5796 | L_RGB: 1.6339 | L_LAB: 2.1607 | L_Fourier: 0.9692
+Epoch [025/300] | LR: 1.97e-04 | Loss_Total: 0.6238 | L1: 0.5767 | L_RGB: 1.6164 | L_LAB: 2.1369 | L_Fourier: 0.9609
+Epoch [026/300] | LR: 1.96e-04 | Loss_Total: 0.6161 | L1: 0.5695 | L_RGB: 1.5964 | L_LAB: 2.1179 | L_Fourier: 0.9492
+Epoch [027/300] | LR: 1.96e-04 | Loss_Total: 0.6127 | L1: 0.5664 | L_RGB: 1.5795 | L_LAB: 2.1095 | L_Fourier: 0.9367
+Epoch [028/300] | LR: 1.96e-04 | Loss_Total: 0.6070 | L1: 0.5610 | L_RGB: 1.5680 | L_LAB: 2.0954 | L_Fourier: 0.9284
+Epoch [029/300] | LR: 1.95e-04 | Loss_Total: 0.6031 | L1: 0.5577 | L_RGB: 1.5535 | L_LAB: 2.0709 | L_Fourier: 0.9168
+Epoch [030/300] | LR: 1.95e-04 | Loss_Total: 0.5977 | L1: 0.5525 | L_RGB: 1.5516 | L_LAB: 2.0518 | L_Fourier: 0.9118
+   >>> [Validation @ Epoch 030] PSNR: 20.78 dB | SSIM: 0.6654 | Model Checkpoint Saved!
+Epoch [031/300] | LR: 1.95e-04 | Loss_Total: 0.5898 | L1: 0.5452 | L_RGB: 1.5277 | L_LAB: 2.0313 | L_Fourier: 0.9045
+Epoch [032/300] | LR: 1.94e-04 | Loss_Total: 0.5867 | L1: 0.5424 | L_RGB: 1.5205 | L_LAB: 2.0192 | L_Fourier: 0.8910
+Epoch [033/300] | LR: 1.94e-04 | Loss_Total: 0.5806 | L1: 0.5365 | L_RGB: 1.5114 | L_LAB: 2.0133 | L_Fourier: 0.8854
+Epoch [034/300] | LR: 1.94e-04 | Loss_Total: 0.5746 | L1: 0.5311 | L_RGB: 1.4851 | L_LAB: 1.9820 | L_Fourier: 0.8774
+Epoch [035/300] | LR: 1.93e-04 | Loss_Total: 0.5691 | L1: 0.5261 | L_RGB: 1.4708 | L_LAB: 1.9643 | L_Fourier: 0.8667
+Epoch [036/300] | LR: 1.93e-04 | Loss_Total: 0.5605 | L1: 0.5178 | L_RGB: 1.4603 | L_LAB: 1.9568 | L_Fourier: 0.8583
+Epoch [037/300] | LR: 1.93e-04 | Loss_Total: 0.5593 | L1: 0.5169 | L_RGB: 1.4484 | L_LAB: 1.9438 | L_Fourier: 0.8460
+Epoch [038/300] | LR: 1.92e-04 | Loss_Total: 0.5525 | L1: 0.5103 | L_RGB: 1.4441 | L_LAB: 1.9264 | L_Fourier: 0.8424
+Epoch [039/300] | LR: 1.92e-04 | Loss_Total: 0.5493 | L1: 0.5077 | L_RGB: 1.4286 | L_LAB: 1.8994 | L_Fourier: 0.8301
+Epoch [040/300] | LR: 1.91e-04 | Loss_Total: 0.5422 | L1: 0.5008 | L_RGB: 1.4110 | L_LAB: 1.9011 | L_Fourier: 0.8220
+   >>> [Validation @ Epoch 040] PSNR: 21.65 dB | SSIM: 0.6890 | Model Checkpoint Saved!
+Epoch [041/300] | LR: 1.91e-04 | Loss_Total: 0.5405 | L1: 0.4995 | L_RGB: 1.4028 | L_LAB: 1.8775 | L_Fourier: 0.8145
+Epoch [042/300] | LR: 1.90e-04 | Loss_Total: 0.5320 | L1: 0.4915 | L_RGB: 1.3941 | L_LAB: 1.8561 | L_Fourier: 0.8026
+Epoch [043/300] | LR: 1.90e-04 | Loss_Total: 0.5300 | L1: 0.4898 | L_RGB: 1.3733 | L_LAB: 1.8539 | L_Fourier: 0.8020
+Epoch [044/300] | LR: 1.90e-04 | Loss_Total: 0.5268 | L1: 0.4870 | L_RGB: 1.3644 | L_LAB: 1.8202 | L_Fourier: 0.7939
+Epoch [045/300] | LR: 1.89e-04 | Loss_Total: 0.5195 | L1: 0.4798 | L_RGB: 1.3621 | L_LAB: 1.8240 | L_Fourier: 0.7854
+Epoch [046/300] | LR: 1.89e-04 | Loss_Total: 0.5139 | L1: 0.4747 | L_RGB: 1.3410 | L_LAB: 1.8068 | L_Fourier: 0.7733
+Epoch [047/300] | LR: 1.88e-04 | Loss_Total: 0.5087 | L1: 0.4697 | L_RGB: 1.3322 | L_LAB: 1.7937 | L_Fourier: 0.7687
+Epoch [048/300] | LR: 1.88e-04 | Loss_Total: 0.5065 | L1: 0.4680 | L_RGB: 1.3133 | L_LAB: 1.7726 | L_Fourier: 0.7634
+Epoch [049/300] | LR: 1.87e-04 | Loss_Total: 0.4995 | L1: 0.4612 | L_RGB: 1.3087 | L_LAB: 1.7633 | L_Fourier: 0.7539
+Epoch [050/300] | LR: 1.87e-04 | Loss_Total: 0.4983 | L1: 0.4605 | L_RGB: 1.3003 | L_LAB: 1.7386 | L_Fourier: 0.7429
+   >>> [Validation @ Epoch 050] PSNR: 22.37 dB | SSIM: 0.7112 | Model Checkpoint Saved!
+Epoch [051/300] | LR: 1.86e-04 | Loss_Total: 0.4950 | L1: 0.4575 | L_RGB: 1.2925 | L_LAB: 1.7273 | L_Fourier: 0.7372
+Epoch [052/300] | LR: 1.86e-04 | Loss_Total: 0.4903 | L1: 0.4531 | L_RGB: 1.2773 | L_LAB: 1.7170 | L_Fourier: 0.7323
+Epoch [053/300] | LR: 1.85e-04 | Loss_Total: 0.4864 | L1: 0.4497 | L_RGB: 1.2613 | L_LAB: 1.6965 | L_Fourier: 0.7195
+Epoch [054/300] | LR: 1.84e-04 | Loss_Total: 0.4803 | L1: 0.4439 | L_RGB: 1.2457 | L_LAB: 1.6844 | L_Fourier: 0.7159
+Epoch [055/300] | LR: 1.84e-04 | Loss_Total: 0.4743 | L1: 0.4382 | L_RGB: 1.2438 | L_LAB: 1.6619 | L_Fourier: 0.7049
+Epoch [056/300] | LR: 1.83e-04 | Loss_Total: 0.4734 | L1: 0.4376 | L_RGB: 1.2295 | L_LAB: 1.6502 | L_Fourier: 0.7018
+Epoch [057/300] | LR: 1.83e-04 | Loss_Total: 0.4691 | L1: 0.4335 | L_RGB: 1.2167 | L_LAB: 1.6467 | L_Fourier: 0.6914
+Epoch [058/300] | LR: 1.82e-04 | Loss_Total: 0.4608 | L1: 0.4254 | L_RGB: 1.2113 | L_LAB: 1.6316 | L_Fourier: 0.6891
+Epoch [059/300] | LR: 1.82e-04 | Loss_Total: 0.4608 | L1: 0.4258 | L_RGB: 1.2081 | L_LAB: 1.6179 | L_Fourier: 0.6798
+Epoch [060/300] | LR: 1.81e-04 | Loss_Total: 0.4571 | L1: 0.4225 | L_RGB: 1.1866 | L_LAB: 1.6032 | L_Fourier: 0.6712
+   >>> [Validation @ Epoch 060] PSNR: 22.79 dB | SSIM: 0.7312 | Model Checkpoint Saved!
+Epoch [061/300] | LR: 1.80e-04 | Loss_Total: 0.4535 | L1: 0.4191 | L_RGB: 1.1833 | L_LAB: 1.5896 | L_Fourier: 0.6654
+Epoch [062/300] | LR: 1.80e-04 | Loss_Total: 0.4455 | L1: 0.4114 | L_RGB: 1.1662 | L_LAB: 1.5796 | L_Fourier: 0.6633
+Epoch [063/300] | LR: 1.79e-04 | Loss_Total: 0.4448 | L1: 0.4109 | L_RGB: 1.1568 | L_LAB: 1.5749 | L_Fourier: 0.6570
+Epoch [064/300] | LR: 1.78e-04 | Loss_Total: 0.4403 | L1: 0.4068 | L_RGB: 1.1523 | L_LAB: 1.5516 | L_Fourier: 0.6468
+Epoch [065/300] | LR: 1.78e-04 | Loss_Total: 0.4352 | L1: 0.4021 | L_RGB: 1.1449 | L_LAB: 1.5309 | L_Fourier: 0.6394
+Epoch [066/300] | LR: 1.77e-04 | Loss_Total: 0.4297 | L1: 0.3968 | L_RGB: 1.1238 | L_LAB: 1.5354 | L_Fourier: 0.6379
+Epoch [067/300] | LR: 1.76e-04 | Loss_Total: 0.4285 | L1: 0.3959 | L_RGB: 1.1152 | L_LAB: 1.5158 | L_Fourier: 0.6300
+Epoch [068/300] | LR: 1.76e-04 | Loss_Total: 0.4231 | L1: 0.3907 | L_RGB: 1.1112 | L_LAB: 1.5017 | L_Fourier: 0.6250
+Epoch [069/300] | LR: 1.75e-04 | Loss_Total: 0.4222 | L1: 0.3902 | L_RGB: 1.0956 | L_LAB: 1.4892 | L_Fourier: 0.6191
+Epoch [070/300] | LR: 1.74e-04 | Loss_Total: 0.4180 | L1: 0.3861 | L_RGB: 1.0994 | L_LAB: 1.4829 | L_Fourier: 0.6095
+   >>> [Validation @ Epoch 070] PSNR: 23.40 dB | SSIM: 0.7445 | Model Checkpoint Saved!
+Epoch [071/300] | LR: 1.74e-04 | Loss_Total: 0.4116 | L1: 0.3800 | L_RGB: 1.0859 | L_LAB: 1.4767 | L_Fourier: 0.6069
+Epoch [072/300] | LR: 1.73e-04 | Loss_Total: 0.4102 | L1: 0.3789 | L_RGB: 1.0778 | L_LAB: 1.4553 | L_Fourier: 0.6009
+Epoch [073/300] | LR: 1.72e-04 | Loss_Total: 0.4102 | L1: 0.3790 | L_RGB: 1.0647 | L_LAB: 1.4538 | L_Fourier: 0.5980
+Epoch [074/300] | LR: 1.71e-04 | Loss_Total: 0.4020 | L1: 0.3714 | L_RGB: 1.0508 | L_LAB: 1.4251 | L_Fourier: 0.5853
+Epoch [075/300] | LR: 1.71e-04 | Loss_Total: 0.3981 | L1: 0.3676 | L_RGB: 1.0518 | L_LAB: 1.4131 | L_Fourier: 0.5821
+Epoch [076/300] | LR: 1.70e-04 | Loss_Total: 0.3993 | L1: 0.3690 | L_RGB: 1.0326 | L_LAB: 1.4166 | L_Fourier: 0.5762
+Epoch [077/300] | LR: 1.69e-04 | Loss_Total: 0.3917 | L1: 0.3616 | L_RGB: 1.0347 | L_LAB: 1.4017 | L_Fourier: 0.5755
+Epoch [078/300] | LR: 1.68e-04 | Loss_Total: 0.3920 | L1: 0.3623 | L_RGB: 1.0279 | L_LAB: 1.3837 | L_Fourier: 0.5645
+Epoch [079/300] | LR: 1.68e-04 | Loss_Total: 0.3890 | L1: 0.3594 | L_RGB: 1.0195 | L_LAB: 1.3869 | L_Fourier: 0.5610
+Epoch [080/300] | LR: 1.67e-04 | Loss_Total: 0.3835 | L1: 0.3541 | L_RGB: 1.0107 | L_LAB: 1.3630 | L_Fourier: 0.5599
+   >>> [Validation @ Epoch 080] PSNR: 24.16 dB | SSIM: 0.7572 | Model Checkpoint Saved!
+Epoch [081/300] | LR: 1.66e-04 | Loss_Total: 0.3825 | L1: 0.3535 | L_RGB: 1.0021 | L_LAB: 1.3474 | L_Fourier: 0.5544
+Epoch [082/300] | LR: 1.65e-04 | Loss_Total: 0.3779 | L1: 0.3491 | L_RGB: 0.9950 | L_LAB: 1.3411 | L_Fourier: 0.5492
+Epoch [083/300] | LR: 1.65e-04 | Loss_Total: 0.3740 | L1: 0.3455 | L_RGB: 0.9739 | L_LAB: 1.3422 | L_Fourier: 0.5377
+Epoch [084/300] | LR: 1.64e-04 | Loss_Total: 0.3707 | L1: 0.3422 | L_RGB: 0.9809 | L_LAB: 1.3326 | L_Fourier: 0.5365
+Epoch [085/300] | LR: 1.63e-04 | Loss_Total: 0.3693 | L1: 0.3413 | L_RGB: 0.9649 | L_LAB: 1.3091 | L_Fourier: 0.5295
+Epoch [086/300] | LR: 1.62e-04 | Loss_Total: 0.3668 | L1: 0.3388 | L_RGB: 0.9619 | L_LAB: 1.3088 | L_Fourier: 0.5282
+Epoch [087/300] | LR: 1.61e-04 | Loss_Total: 0.3601 | L1: 0.3325 | L_RGB: 0.9500 | L_LAB: 1.2839 | L_Fourier: 0.5214
+Epoch [088/300] | LR: 1.60e-04 | Loss_Total: 0.3593 | L1: 0.3319 | L_RGB: 0.9486 | L_LAB: 1.2796 | L_Fourier: 0.5131
+Epoch [089/300] | LR: 1.60e-04 | Loss_Total: 0.3546 | L1: 0.3274 | L_RGB: 0.9389 | L_LAB: 1.2750 | L_Fourier: 0.5082
+Epoch [090/300] | LR: 1.59e-04 | Loss_Total: 0.3513 | L1: 0.3244 | L_RGB: 0.9304 | L_LAB: 1.2541 | L_Fourier: 0.5093
+   >>> [Validation @ Epoch 090] PSNR: 24.58 dB | SSIM: 0.7671 | Model Checkpoint Saved!
+Epoch [091/300] | LR: 1.58e-04 | Loss_Total: 0.3485 | L1: 0.3217 | L_RGB: 0.9275 | L_LAB: 1.2504 | L_Fourier: 0.5010
+Epoch [092/300] | LR: 1.57e-04 | Loss_Total: 0.3502 | L1: 0.3235 | L_RGB: 0.9194 | L_LAB: 1.2529 | L_Fourier: 0.4994
+Epoch [093/300] | LR: 1.56e-04 | Loss_Total: 0.3446 | L1: 0.3183 | L_RGB: 0.8983 | L_LAB: 1.2390 | L_Fourier: 0.4933
+Epoch [094/300] | LR: 1.55e-04 | Loss_Total: 0.3421 | L1: 0.3160 | L_RGB: 0.9042 | L_LAB: 1.2162 | L_Fourier: 0.4882
+Epoch [095/300] | LR: 1.54e-04 | Loss_Total: 0.3368 | L1: 0.3110 | L_RGB: 0.8900 | L_LAB: 1.2056 | L_Fourier: 0.4808
+Epoch [096/300] | LR: 1.54e-04 | Loss_Total: 0.3349 | L1: 0.3092 | L_RGB: 0.8857 | L_LAB: 1.2100 | L_Fourier: 0.4801
+Epoch [097/300] | LR: 1.53e-04 | Loss_Total: 0.3372 | L1: 0.3117 | L_RGB: 0.8743 | L_LAB: 1.1915 | L_Fourier: 0.4780
+Epoch [098/300] | LR: 1.52e-04 | Loss_Total: 0.3301 | L1: 0.3049 | L_RGB: 0.8767 | L_LAB: 1.1768 | L_Fourier: 0.4745
+Epoch [099/300] | LR: 1.51e-04 | Loss_Total: 0.3265 | L1: 0.3014 | L_RGB: 0.8687 | L_LAB: 1.1780 | L_Fourier: 0.4704
+Epoch [100/300] | LR: 1.50e-04 | Loss_Total: 0.3241 | L1: 0.2991 | L_RGB: 0.8564 | L_LAB: 1.1778 | L_Fourier: 0.4624
+   >>> [Validation @ Epoch 100] PSNR: 24.98 dB | SSIM: 0.7853 | Model Checkpoint Saved!
+Epoch [101/300] | LR: 1.49e-04 | Loss_Total: 0.3238 | L1: 0.2991 | L_RGB: 0.8508 | L_LAB: 1.1612 | L_Fourier: 0.4613
+Epoch [102/300] | LR: 1.48e-04 | Loss_Total: 0.3188 | L1: 0.2943 | L_RGB: 0.8386 | L_LAB: 1.1596 | L_Fourier: 0.4571
+Epoch [103/300] | LR: 1.47e-04 | Loss_Total: 0.3186 | L1: 0.2944 | L_RGB: 0.8374 | L_LAB: 1.1374 | L_Fourier: 0.4474
+Epoch [104/300] | LR: 1.46e-04 | Loss_Total: 0.3162 | L1: 0.2921 | L_RGB: 0.8265 | L_LAB: 1.1348 | L_Fourier: 0.4425
+Epoch [105/300] | LR: 1.45e-04 | Loss_Total: 0.3169 | L1: 0.2929 | L_RGB: 0.8302 | L_LAB: 1.1285 | L_Fourier: 0.4421
+Epoch [106/300] | LR: 1.44e-04 | Loss_Total: 0.3104 | L1: 0.2867 | L_RGB: 0.8210 | L_LAB: 1.1197 | L_Fourier: 0.4352
+Epoch [107/300] | LR: 1.44e-04 | Loss_Total: 0.3117 | L1: 0.2881 | L_RGB: 0.8147 | L_LAB: 1.1165 | L_Fourier: 0.4358
+Epoch [108/300] | LR: 1.43e-04 | Loss_Total: 0.3075 | L1: 0.2841 | L_RGB: 0.8019 | L_LAB: 1.1078 | L_Fourier: 0.4331
+Epoch [109/300] | LR: 1.42e-04 | Loss_Total: 0.3016 | L1: 0.2785 | L_RGB: 0.7894 | L_LAB: 1.0883 | L_Fourier: 0.4288
+Epoch [110/300] | LR: 1.41e-04 | Loss_Total: 0.3049 | L1: 0.2820 | L_RGB: 0.7852 | L_LAB: 1.0845 | L_Fourier: 0.4216
+   >>> [Validation @ Epoch 110] PSNR: 25.45 dB | SSIM: 0.7975 | Model Checkpoint Saved!
+Epoch [111/300] | LR: 1.40e-04 | Loss_Total: 0.3017 | L1: 0.2790 | L_RGB: 0.7842 | L_LAB: 1.0727 | L_Fourier: 0.4170
+Epoch [112/300] | LR: 1.39e-04 | Loss_Total: 0.2949 | L1: 0.2722 | L_RGB: 0.7845 | L_LAB: 1.0726 | L_Fourier: 0.4192
+Epoch [113/300] | LR: 1.38e-04 | Loss_Total: 0.2982 | L1: 0.2757 | L_RGB: 0.7735 | L_LAB: 1.0637 | L_Fourier: 0.4151
+Epoch [114/300] | LR: 1.37e-04 | Loss_Total: 0.2949 | L1: 0.2728 | L_RGB: 0.7626 | L_LAB: 1.0494 | L_Fourier: 0.4050
+Epoch [115/300] | LR: 1.36e-04 | Loss_Total: 0.2934 | L1: 0.2713 | L_RGB: 0.7625 | L_LAB: 1.0371 | L_Fourier: 0.4057
+Epoch [116/300] | LR: 1.35e-04 | Loss_Total: 0.2891 | L1: 0.2673 | L_RGB: 0.7527 | L_LAB: 1.0271 | L_Fourier: 0.4022
+Epoch [117/300] | LR: 1.34e-04 | Loss_Total: 0.2865 | L1: 0.2647 | L_RGB: 0.7535 | L_LAB: 1.0275 | L_Fourier: 0.4002
+Epoch [118/300] | LR: 1.33e-04 | Loss_Total: 0.2846 | L1: 0.2629 | L_RGB: 0.7444 | L_LAB: 1.0270 | L_Fourier: 0.3932
+Epoch [119/300] | LR: 1.32e-04 | Loss_Total: 0.2799 | L1: 0.2585 | L_RGB: 0.7303 | L_LAB: 1.0170 | L_Fourier: 0.3915
+Epoch [120/300] | LR: 1.31e-04 | Loss_Total: 0.2810 | L1: 0.2599 | L_RGB: 0.7276 | L_LAB: 0.9971 | L_Fourier: 0.3833
+   >>> [Validation @ Epoch 120] PSNR: 25.59 dB | SSIM: 0.8047 | Model Checkpoint Saved!
+Epoch [121/300] | LR: 1.30e-04 | Loss_Total: 0.2773 | L1: 0.2562 | L_RGB: 0.7257 | L_LAB: 1.0050 | L_Fourier: 0.3826
+Epoch [122/300] | LR: 1.29e-04 | Loss_Total: 0.2759 | L1: 0.2550 | L_RGB: 0.7257 | L_LAB: 0.9875 | L_Fourier: 0.3815
+Epoch [123/300] | LR: 1.28e-04 | Loss_Total: 0.2760 | L1: 0.2552 | L_RGB: 0.7229 | L_LAB: 0.9753 | L_Fourier: 0.3807
+Epoch [124/300] | LR: 1.27e-04 | Loss_Total: 0.2717 | L1: 0.2511 | L_RGB: 0.7065 | L_LAB: 0.9743 | L_Fourier: 0.3779
+Epoch [125/300] | LR: 1.26e-04 | Loss_Total: 0.2697 | L1: 0.2493 | L_RGB: 0.7023 | L_LAB: 0.9706 | L_Fourier: 0.3688
+Epoch [126/300] | LR: 1.25e-04 | Loss_Total: 0.2651 | L1: 0.2450 | L_RGB: 0.6938 | L_LAB: 0.9534 | L_Fourier: 0.3650
+Epoch [127/300] | LR: 1.24e-04 | Loss_Total: 0.2636 | L1: 0.2436 | L_RGB: 0.6968 | L_LAB: 0.9475 | L_Fourier: 0.3634
+Epoch [128/300] | LR: 1.23e-04 | Loss_Total: 0.2663 | L1: 0.2463 | L_RGB: 0.6890 | L_LAB: 0.9502 | L_Fourier: 0.3590
+Epoch [129/300] | LR: 1.22e-04 | Loss_Total: 0.2600 | L1: 0.2403 | L_RGB: 0.6769 | L_LAB: 0.9334 | L_Fourier: 0.3568
+Epoch [130/300] | LR: 1.21e-04 | Loss_Total: 0.2580 | L1: 0.2385 | L_RGB: 0.6726 | L_LAB: 0.9256 | L_Fourier: 0.3552
+   >>> [Validation @ Epoch 130] PSNR: 25.84 dB | SSIM: 0.8112 | Model Checkpoint Saved!
+Epoch [131/300] | LR: 1.20e-04 | Loss_Total: 0.2582 | L1: 0.2387 | L_RGB: 0.6772 | L_LAB: 0.9172 | L_Fourier: 0.3550
+Epoch [132/300] | LR: 1.19e-04 | Loss_Total: 0.2572 | L1: 0.2378 | L_RGB: 0.6625 | L_LAB: 0.9272 | L_Fourier: 0.3530
+Epoch [133/300] | LR: 1.18e-04 | Loss_Total: 0.2520 | L1: 0.2327 | L_RGB: 0.6607 | L_LAB: 0.9192 | L_Fourier: 0.3487
+Epoch [134/300] | LR: 1.17e-04 | Loss_Total: 0.2508 | L1: 0.2318 | L_RGB: 0.6548 | L_LAB: 0.9039 | L_Fourier: 0.3437
+Epoch [135/300] | LR: 1.16e-04 | Loss_Total: 0.2517 | L1: 0.2327 | L_RGB: 0.6525 | L_LAB: 0.8992 | L_Fourier: 0.3430
+Epoch [136/300] | LR: 1.15e-04 | Loss_Total: 0.2464 | L1: 0.2276 | L_RGB: 0.6459 | L_LAB: 0.8978 | L_Fourier: 0.3414
+Epoch [137/300] | LR: 1.14e-04 | Loss_Total: 0.2474 | L1: 0.2288 | L_RGB: 0.6456 | L_LAB: 0.8792 | L_Fourier: 0.3350
+Epoch [138/300] | LR: 1.13e-04 | Loss_Total: 0.2458 | L1: 0.2273 | L_RGB: 0.6363 | L_LAB: 0.8761 | L_Fourier: 0.3317
+Epoch [139/300] | LR: 1.11e-04 | Loss_Total: 0.2410 | L1: 0.2227 | L_RGB: 0.6329 | L_LAB: 0.8687 | L_Fourier: 0.3286
+Epoch [140/300] | LR: 1.10e-04 | Loss_Total: 0.2401 | L1: 0.2217 | L_RGB: 0.6375 | L_LAB: 0.8701 | L_Fourier: 0.3287
+   >>> [Validation @ Epoch 140] PSNR: 26.28 dB | SSIM: 0.8204 | Model Checkpoint Saved!
+Epoch [141/300] | LR: 1.09e-04 | Loss_Total: 0.2382 | L1: 0.2200 | L_RGB: 0.6273 | L_LAB: 0.8638 | L_Fourier: 0.3266
+Epoch [142/300] | LR: 1.08e-04 | Loss_Total: 0.2384 | L1: 0.2205 | L_RGB: 0.6162 | L_LAB: 0.8517 | L_Fourier: 0.3209
+Epoch [143/300] | LR: 1.07e-04 | Loss_Total: 0.2382 | L1: 0.2203 | L_RGB: 0.6189 | L_LAB: 0.8471 | L_Fourier: 0.3233
+Epoch [144/300] | LR: 1.06e-04 | Loss_Total: 0.2361 | L1: 0.2185 | L_RGB: 0.6091 | L_LAB: 0.8360 | L_Fourier: 0.3141
+Epoch [145/300] | LR: 1.05e-04 | Loss_Total: 0.2324 | L1: 0.2149 | L_RGB: 0.6035 | L_LAB: 0.8318 | L_Fourier: 0.3126
+Epoch [146/300] | LR: 1.04e-04 | Loss_Total: 0.2305 | L1: 0.2130 | L_RGB: 0.6110 | L_LAB: 0.8237 | L_Fourier: 0.3120
+Epoch [147/300] | LR: 1.03e-04 | Loss_Total: 0.2303 | L1: 0.2130 | L_RGB: 0.6081 | L_LAB: 0.8186 | L_Fourier: 0.3085
+Epoch [148/300] | LR: 1.02e-04 | Loss_Total: 0.2322 | L1: 0.2149 | L_RGB: 0.6020 | L_LAB: 0.8269 | L_Fourier: 0.3050
+Epoch [149/300] | LR: 1.01e-04 | Loss_Total: 0.2259 | L1: 0.2087 | L_RGB: 0.5946 | L_LAB: 0.8234 | L_Fourier: 0.3049
+Epoch [150/300] | LR: 1.00e-04 | Loss_Total: 0.2266 | L1: 0.2097 | L_RGB: 0.5843 | L_LAB: 0.8146 | L_Fourier: 0.2996
+   >>> [Validation @ Epoch 150] PSNR: 26.37 dB | SSIM: 0.8267 | Model Checkpoint Saved!
+Epoch [151/300] | LR: 9.90e-05 | Loss_Total: 0.2246 | L1: 0.2079 | L_RGB: 0.5796 | L_LAB: 0.7958 | L_Fourier: 0.3006
+Epoch [152/300] | LR: 9.79e-05 | Loss_Total: 0.2219 | L1: 0.2052 | L_RGB: 0.5809 | L_LAB: 0.7911 | L_Fourier: 0.2972
+Epoch [153/300] | LR: 9.69e-05 | Loss_Total: 0.2218 | L1: 0.2053 | L_RGB: 0.5684 | L_LAB: 0.7892 | L_Fourier: 0.2921
+Epoch [154/300] | LR: 9.58e-05 | Loss_Total: 0.2177 | L1: 0.2011 | L_RGB: 0.5794 | L_LAB: 0.7835 | L_Fourier: 0.2953
+Epoch [155/300] | LR: 9.48e-05 | Loss_Total: 0.2174 | L1: 0.2009 | L_RGB: 0.5706 | L_LAB: 0.7868 | L_Fourier: 0.2913
+Epoch [156/300] | LR: 9.37e-05 | Loss_Total: 0.2172 | L1: 0.2009 | L_RGB: 0.5623 | L_LAB: 0.7732 | L_Fourier: 0.2917
+Epoch [157/300] | LR: 9.27e-05 | Loss_Total: 0.2180 | L1: 0.2018 | L_RGB: 0.5673 | L_LAB: 0.7634 | L_Fourier: 0.2879
+Epoch [158/300] | LR: 9.16e-05 | Loss_Total: 0.2171 | L1: 0.2011 | L_RGB: 0.5510 | L_LAB: 0.7570 | L_Fourier: 0.2858
+Epoch [159/300] | LR: 9.06e-05 | Loss_Total: 0.2136 | L1: 0.1977 | L_RGB: 0.5577 | L_LAB: 0.7533 | L_Fourier: 0.2841
+Epoch [160/300] | LR: 8.95e-05 | Loss_Total: 0.2099 | L1: 0.1942 | L_RGB: 0.5431 | L_LAB: 0.7486 | L_Fourier: 0.2821
+   >>> [Validation @ Epoch 160] PSNR: 26.68 dB | SSIM: 0.8340 | Model Checkpoint Saved!
+Epoch [161/300] | LR: 8.85e-05 | Loss_Total: 0.2096 | L1: 0.1939 | L_RGB: 0.5508 | L_LAB: 0.7481 | L_Fourier: 0.2800
+Epoch [162/300] | LR: 8.75e-05 | Loss_Total: 0.2087 | L1: 0.1931 | L_RGB: 0.5391 | L_LAB: 0.7444 | L_Fourier: 0.2738
+Epoch [163/300] | LR: 8.64e-05 | Loss_Total: 0.2092 | L1: 0.1937 | L_RGB: 0.5375 | L_LAB: 0.7348 | L_Fourier: 0.2765
+Epoch [164/300] | LR: 8.54e-05 | Loss_Total: 0.2058 | L1: 0.1903 | L_RGB: 0.5346 | L_LAB: 0.7433 | L_Fourier: 0.2723
+Epoch [165/300] | LR: 8.44e-05 | Loss_Total: 0.2029 | L1: 0.1875 | L_RGB: 0.5373 | L_LAB: 0.7328 | L_Fourier: 0.2679
+Epoch [166/300] | LR: 8.33e-05 | Loss_Total: 0.2017 | L1: 0.1865 | L_RGB: 0.5315 | L_LAB: 0.7278 | L_Fourier: 0.2675
+Epoch [167/300] | LR: 8.23e-05 | Loss_Total: 0.2049 | L1: 0.1898 | L_RGB: 0.5279 | L_LAB: 0.7136 | L_Fourier: 0.2638
+Epoch [168/300] | LR: 8.13e-05 | Loss_Total: 0.1997 | L1: 0.1848 | L_RGB: 0.5237 | L_LAB: 0.7064 | L_Fourier: 0.2639
+Epoch [169/300] | LR: 8.02e-05 | Loss_Total: 0.2017 | L1: 0.1867 | L_RGB: 0.5224 | L_LAB: 0.7078 | L_Fourier: 0.2640
+Epoch [170/300] | LR: 7.92e-05 | Loss_Total: 0.1964 | L1: 0.1817 | L_RGB: 0.5185 | L_LAB: 0.6988 | L_Fourier: 0.2587
+   >>> [Validation @ Epoch 170] PSNR: 26.90 dB | SSIM: 0.8359 | Model Checkpoint Saved!
+Epoch [171/300] | LR: 7.82e-05 | Loss_Total: 0.1961 | L1: 0.1813 | L_RGB: 0.5132 | L_LAB: 0.7060 | L_Fourier: 0.2587
+Epoch [172/300] | LR: 7.72e-05 | Loss_Total: 0.1975 | L1: 0.1829 | L_RGB: 0.5070 | L_LAB: 0.6921 | L_Fourier: 0.2545
+Epoch [173/300] | LR: 7.61e-05 | Loss_Total: 0.1933 | L1: 0.1788 | L_RGB: 0.5095 | L_LAB: 0.6941 | L_Fourier: 0.2531
+Epoch [174/300] | LR: 7.51e-05 | Loss_Total: 0.1938 | L1: 0.1794 | L_RGB: 0.5069 | L_LAB: 0.6810 | L_Fourier: 0.2527
+Epoch [175/300] | LR: 7.41e-05 | Loss_Total: 0.1928 | L1: 0.1786 | L_RGB: 0.4983 | L_LAB: 0.6738 | L_Fourier: 0.2532
+Epoch [176/300] | LR: 7.31e-05 | Loss_Total: 0.1943 | L1: 0.1800 | L_RGB: 0.4943 | L_LAB: 0.6829 | L_Fourier: 0.2518
+Epoch [177/300] | LR: 7.21e-05 | Loss_Total: 0.1917 | L1: 0.1776 | L_RGB: 0.4846 | L_LAB: 0.6761 | L_Fourier: 0.2476
+Epoch [178/300] | LR: 7.11e-05 | Loss_Total: 0.1891 | L1: 0.1749 | L_RGB: 0.4908 | L_LAB: 0.6789 | L_Fourier: 0.2484
+Epoch [179/300] | LR: 7.01e-05 | Loss_Total: 0.1880 | L1: 0.1740 | L_RGB: 0.4777 | L_LAB: 0.6756 | L_Fourier: 0.2459
+Epoch [180/300] | LR: 6.91e-05 | Loss_Total: 0.1850 | L1: 0.1710 | L_RGB: 0.4875 | L_LAB: 0.6690 | L_Fourier: 0.2417
+   >>> [Validation @ Epoch 180] PSNR: 27.00 dB | SSIM: 0.8435 | Model Checkpoint Saved!
+Epoch [181/300] | LR: 6.81e-05 | Loss_Total: 0.1834 | L1: 0.1696 | L_RGB: 0.4751 | L_LAB: 0.6634 | L_Fourier: 0.2359
+Epoch [182/300] | LR: 6.71e-05 | Loss_Total: 0.1840 | L1: 0.1703 | L_RGB: 0.4731 | L_LAB: 0.6539 | L_Fourier: 0.2415
+Epoch [183/300] | LR: 6.61e-05 | Loss_Total: 0.1830 | L1: 0.1694 | L_RGB: 0.4693 | L_LAB: 0.6538 | L_Fourier: 0.2362
+Epoch [184/300] | LR: 6.51e-05 | Loss_Total: 0.1810 | L1: 0.1677 | L_RGB: 0.4681 | L_LAB: 0.6377 | L_Fourier: 0.2323
+Epoch [185/300] | LR: 6.42e-05 | Loss_Total: 0.1818 | L1: 0.1683 | L_RGB: 0.4646 | L_LAB: 0.6491 | L_Fourier: 0.2322
+Epoch [186/300] | LR: 6.32e-05 | Loss_Total: 0.1811 | L1: 0.1679 | L_RGB: 0.4651 | L_LAB: 0.6270 | L_Fourier: 0.2330
+Epoch [187/300] | LR: 6.22e-05 | Loss_Total: 0.1777 | L1: 0.1645 | L_RGB: 0.4675 | L_LAB: 0.6257 | L_Fourier: 0.2294
+Epoch [188/300] | LR: 6.12e-05 | Loss_Total: 0.1762 | L1: 0.1630 | L_RGB: 0.4652 | L_LAB: 0.6288 | L_Fourier: 0.2293
+Epoch [189/300] | LR: 6.03e-05 | Loss_Total: 0.1751 | L1: 0.1620 | L_RGB: 0.4585 | L_LAB: 0.6190 | L_Fourier: 0.2302
+Epoch [190/300] | LR: 5.93e-05 | Loss_Total: 0.1747 | L1: 0.1619 | L_RGB: 0.4468 | L_LAB: 0.6117 | L_Fourier: 0.2253
+   >>> [Validation @ Epoch 190] PSNR: 27.14 dB | SSIM: 0.8448 | Model Checkpoint Saved!
+Epoch [191/300] | LR: 5.84e-05 | Loss_Total: 0.1773 | L1: 0.1644 | L_RGB: 0.4482 | L_LAB: 0.6176 | L_Fourier: 0.2235
+Epoch [192/300] | LR: 5.74e-05 | Loss_Total: 0.1740 | L1: 0.1612 | L_RGB: 0.4472 | L_LAB: 0.6063 | L_Fourier: 0.2200
+Epoch [193/300] | LR: 5.65e-05 | Loss_Total: 0.1759 | L1: 0.1631 | L_RGB: 0.4507 | L_LAB: 0.6069 | L_Fourier: 0.2192
+Epoch [194/300] | LR: 5.55e-05 | Loss_Total: 0.1735 | L1: 0.1609 | L_RGB: 0.4394 | L_LAB: 0.5962 | L_Fourier: 0.2168
+Epoch [195/300] | LR: 5.46e-05 | Loss_Total: 0.1730 | L1: 0.1605 | L_RGB: 0.4407 | L_LAB: 0.5925 | L_Fourier: 0.2159
+Epoch [196/300] | LR: 5.37e-05 | Loss_Total: 0.1691 | L1: 0.1567 | L_RGB: 0.4383 | L_LAB: 0.5887 | L_Fourier: 0.2136
+Epoch [197/300] | LR: 5.27e-05 | Loss_Total: 0.1717 | L1: 0.1593 | L_RGB: 0.4279 | L_LAB: 0.5977 | L_Fourier: 0.2132
+Epoch [198/300] | LR: 5.18e-05 | Loss_Total: 0.1666 | L1: 0.1542 | L_RGB: 0.4263 | L_LAB: 0.5954 | L_Fourier: 0.2168
+Epoch [199/300] | LR: 5.09e-05 | Loss_Total: 0.1701 | L1: 0.1578 | L_RGB: 0.4262 | L_LAB: 0.5908 | L_Fourier: 0.2102
+Epoch [200/300] | LR: 5.00e-05 | Loss_Total: 0.1659 | L1: 0.1537 | L_RGB: 0.4317 | L_LAB: 0.5741 | L_Fourier: 0.2079
+   >>> [Validation @ Epoch 200] PSNR: 27.17 dB | SSIM: 0.8485 | Model Checkpoint Saved!
+Epoch [201/300] | LR: 4.91e-05 | Loss_Total: 0.1644 | L1: 0.1523 | L_RGB: 0.4242 | L_LAB: 0.5788 | L_Fourier: 0.2130
+Epoch [202/300] | LR: 4.82e-05 | Loss_Total: 0.1672 | L1: 0.1553 | L_RGB: 0.4179 | L_LAB: 0.5720 | L_Fourier: 0.2076
+Epoch [203/300] | LR: 4.73e-05 | Loss_Total: 0.1651 | L1: 0.1531 | L_RGB: 0.4143 | L_LAB: 0.5759 | L_Fourier: 0.2065
+Epoch [204/300] | LR: 4.64e-05 | Loss_Total: 0.1640 | L1: 0.1521 | L_RGB: 0.4145 | L_LAB: 0.5659 | L_Fourier: 0.2095
+Epoch [205/300] | LR: 4.55e-05 | Loss_Total: 0.1644 | L1: 0.1526 | L_RGB: 0.4074 | L_LAB: 0.5740 | L_Fourier: 0.2045
+Epoch [206/300] | LR: 4.47e-05 | Loss_Total: 0.1644 | L1: 0.1526 | L_RGB: 0.4156 | L_LAB: 0.5617 | L_Fourier: 0.1995
+Epoch [207/300] | LR: 4.38e-05 | Loss_Total: 0.1598 | L1: 0.1481 | L_RGB: 0.4091 | L_LAB: 0.5626 | L_Fourier: 0.2002
+Epoch [208/300] | LR: 4.29e-05 | Loss_Total: 0.1583 | L1: 0.1465 | L_RGB: 0.4115 | L_LAB: 0.5663 | L_Fourier: 0.2011
+Epoch [209/300] | LR: 4.21e-05 | Loss_Total: 0.1574 | L1: 0.1460 | L_RGB: 0.4002 | L_LAB: 0.5437 | L_Fourier: 0.2030
+Epoch [210/300] | LR: 4.12e-05 | Loss_Total: 0.1564 | L1: 0.1449 | L_RGB: 0.4028 | L_LAB: 0.5456 | L_Fourier: 0.1989
+   >>> [Validation @ Epoch 210] PSNR: 27.41 dB | SSIM: 0.8603 | Model Checkpoint Saved!
+Epoch [211/300] | LR: 4.04e-05 | Loss_Total: 0.1560 | L1: 0.1447 | L_RGB: 0.3915 | L_LAB: 0.5396 | L_Fourier: 0.2004
+Epoch [212/300] | LR: 3.95e-05 | Loss_Total: 0.1594 | L1: 0.1480 | L_RGB: 0.3986 | L_LAB: 0.5457 | L_Fourier: 0.1974
+Epoch [213/300] | LR: 3.87e-05 | Loss_Total: 0.1544 | L1: 0.1431 | L_RGB: 0.4015 | L_LAB: 0.5389 | L_Fourier: 0.1939
+Epoch [214/300] | LR: 3.79e-05 | Loss_Total: 0.1555 | L1: 0.1444 | L_RGB: 0.3854 | L_LAB: 0.5308 | L_Fourier: 0.1956
+Epoch [215/300] | LR: 3.71e-05 | Loss_Total: 0.1522 | L1: 0.1411 | L_RGB: 0.3921 | L_LAB: 0.5293 | L_Fourier: 0.1917
+Epoch [216/300] | LR: 3.63e-05 | Loss_Total: 0.1528 | L1: 0.1416 | L_RGB: 0.3860 | L_LAB: 0.5357 | L_Fourier: 0.1898
+Epoch [217/300] | LR: 3.55e-05 | Loss_Total: 0.1537 | L1: 0.1426 | L_RGB: 0.3858 | L_LAB: 0.5316 | L_Fourier: 0.1938
+Epoch [218/300] | LR: 3.47e-05 | Loss_Total: 0.1538 | L1: 0.1429 | L_RGB: 0.3796 | L_LAB: 0.5159 | L_Fourier: 0.1873
+Epoch [219/300] | LR: 3.39e-05 | Loss_Total: 0.1523 | L1: 0.1414 | L_RGB: 0.3749 | L_LAB: 0.5222 | L_Fourier: 0.1889
+Epoch [220/300] | LR: 3.31e-05 | Loss_Total: 0.1500 | L1: 0.1392 | L_RGB: 0.3843 | L_LAB: 0.5115 | L_Fourier: 0.1836
+   >>> [Validation @ Epoch 220] PSNR: 27.54 dB | SSIM: 0.8603 | Model Checkpoint Saved!
+Epoch [221/300] | LR: 3.23e-05 | Loss_Total: 0.1514 | L1: 0.1407 | L_RGB: 0.3769 | L_LAB: 0.5114 | L_Fourier: 0.1885
+Epoch [222/300] | LR: 3.15e-05 | Loss_Total: 0.1514 | L1: 0.1407 | L_RGB: 0.3790 | L_LAB: 0.5090 | L_Fourier: 0.1856
+Epoch [223/300] | LR: 3.08e-05 | Loss_Total: 0.1481 | L1: 0.1374 | L_RGB: 0.3674 | L_LAB: 0.5190 | L_Fourier: 0.1809
+Epoch [224/300] | LR: 3.00e-05 | Loss_Total: 0.1509 | L1: 0.1403 | L_RGB: 0.3711 | L_LAB: 0.5015 | L_Fourier: 0.1832
+Epoch [225/300] | LR: 2.93e-05 | Loss_Total: 0.1499 | L1: 0.1392 | L_RGB: 0.3737 | L_LAB: 0.5111 | L_Fourier: 0.1831
+Epoch [226/300] | LR: 2.86e-05 | Loss_Total: 0.1480 | L1: 0.1375 | L_RGB: 0.3736 | L_LAB: 0.4972 | L_Fourier: 0.1807
+Epoch [227/300] | LR: 2.78e-05 | Loss_Total: 0.1446 | L1: 0.1340 | L_RGB: 0.3739 | L_LAB: 0.5084 | L_Fourier: 0.1761
+Epoch [228/300] | LR: 2.71e-05 | Loss_Total: 0.1468 | L1: 0.1363 | L_RGB: 0.3710 | L_LAB: 0.4903 | L_Fourier: 0.1793
+Epoch [229/300] | LR: 2.64e-05 | Loss_Total: 0.1473 | L1: 0.1370 | L_RGB: 0.3549 | L_LAB: 0.4980 | L_Fourier: 0.1762
+Epoch [230/300] | LR: 2.57e-05 | Loss_Total: 0.1469 | L1: 0.1365 | L_RGB: 0.3680 | L_LAB: 0.5002 | L_Fourier: 0.1766
+   >>> [Validation @ Epoch 230] PSNR: 27.67 dB | SSIM: 0.8668 | Model Checkpoint Saved!
+Epoch [231/300] | LR: 2.50e-05 | Loss_Total: 0.1424 | L1: 0.1322 | L_RGB: 0.3639 | L_LAB: 0.4794 | L_Fourier: 0.1767
+Epoch [232/300] | LR: 2.43e-05 | Loss_Total: 0.1412 | L1: 0.1311 | L_RGB: 0.3507 | L_LAB: 0.4776 | L_Fourier: 0.1765
+Epoch [233/300] | LR: 2.36e-05 | Loss_Total: 0.1412 | L1: 0.1312 | L_RGB: 0.3586 | L_LAB: 0.4747 | L_Fourier: 0.1725
+Epoch [234/300] | LR: 2.29e-05 | Loss_Total: 0.1419 | L1: 0.1318 | L_RGB: 0.3579 | L_LAB: 0.4772 | L_Fourier: 0.1741
+Epoch [235/300] | LR: 2.23e-05 | Loss_Total: 0.1433 | L1: 0.1333 | L_RGB: 0.3533 | L_LAB: 0.4729 | L_Fourier: 0.1684
+Epoch [236/300] | LR: 2.16e-05 | Loss_Total: 0.1426 | L1: 0.1327 | L_RGB: 0.3420 | L_LAB: 0.4832 | L_Fourier: 0.1715
+Epoch [237/300] | LR: 2.10e-05 | Loss_Total: 0.1426 | L1: 0.1325 | L_RGB: 0.3527 | L_LAB: 0.4832 | L_Fourier: 0.1692
+Epoch [238/300] | LR: 2.03e-05 | Loss_Total: 0.1408 | L1: 0.1309 | L_RGB: 0.3446 | L_LAB: 0.4703 | L_Fourier: 0.1705
+Epoch [239/300] | LR: 1.97e-05 | Loss_Total: 0.1410 | L1: 0.1310 | L_RGB: 0.3523 | L_LAB: 0.4736 | L_Fourier: 0.1680
+Epoch [240/300] | LR: 1.91e-05 | Loss_Total: 0.1375 | L1: 0.1278 | L_RGB: 0.3466 | L_LAB: 0.4606 | L_Fourier: 0.1646
+   >>> [Validation @ Epoch 240] PSNR: 27.60 dB | SSIM: 0.8639 | Model Checkpoint Saved!
+Epoch [241/300] | LR: 1.85e-05 | Loss_Total: 0.1360 | L1: 0.1265 | L_RGB: 0.3369 | L_LAB: 0.4542 | L_Fourier: 0.1630
+Epoch [242/300] | LR: 1.79e-05 | Loss_Total: 0.1398 | L1: 0.1301 | L_RGB: 0.3383 | L_LAB: 0.4587 | L_Fourier: 0.1675
+Epoch [243/300] | LR: 1.73e-05 | Loss_Total: 0.1347 | L1: 0.1250 | L_RGB: 0.3451 | L_LAB: 0.4643 | L_Fourier: 0.1619
+Epoch [244/300] | LR: 1.67e-05 | Loss_Total: 0.1354 | L1: 0.1257 | L_RGB: 0.3423 | L_LAB: 0.4652 | L_Fourier: 0.1641
+Epoch [245/300] | LR: 1.61e-05 | Loss_Total: 0.1359 | L1: 0.1263 | L_RGB: 0.3293 | L_LAB: 0.4638 | L_Fourier: 0.1614
+Epoch [246/300] | LR: 1.56e-05 | Loss_Total: 0.1373 | L1: 0.1278 | L_RGB: 0.3354 | L_LAB: 0.4538 | L_Fourier: 0.1629
+Epoch [247/300] | LR: 1.50e-05 | Loss_Total: 0.1323 | L1: 0.1230 | L_RGB: 0.3263 | L_LAB: 0.4437 | L_Fourier: 0.1595
+Epoch [248/300] | LR: 1.45e-05 | Loss_Total: 0.1351 | L1: 0.1258 | L_RGB: 0.3275 | L_LAB: 0.4382 | L_Fourier: 0.1649
+Epoch [249/300] | LR: 1.39e-05 | Loss_Total: 0.1354 | L1: 0.1260 | L_RGB: 0.3352 | L_LAB: 0.4547 | L_Fourier: 0.1578
+Epoch [250/300] | LR: 1.34e-05 | Loss_Total: 0.1319 | L1: 0.1225 | L_RGB: 0.3310 | L_LAB: 0.4465 | L_Fourier: 0.1569
+   >>> [Validation @ Epoch 250] PSNR: 27.81 dB | SSIM: 0.8657 | Model Checkpoint Saved!
+Epoch [251/300] | LR: 1.29e-05 | Loss_Total: 0.1303 | L1: 0.1210 | L_RGB: 0.3259 | L_LAB: 0.4422 | L_Fourier: 0.1595
+Epoch [252/300] | LR: 1.24e-05 | Loss_Total: 0.1289 | L1: 0.1198 | L_RGB: 0.3299 | L_LAB: 0.4335 | L_Fourier: 0.1552
+Epoch [253/300] | LR: 1.19e-05 | Loss_Total: 0.1334 | L1: 0.1241 | L_RGB: 0.3297 | L_LAB: 0.4433 | L_Fourier: 0.1599
+Epoch [254/300] | LR: 1.14e-05 | Loss_Total: 0.1312 | L1: 0.1222 | L_RGB: 0.3217 | L_LAB: 0.4256 | L_Fourier: 0.1559
+Epoch [255/300] | LR: 1.09e-05 | Loss_Total: 0.1291 | L1: 0.1201 | L_RGB: 0.3156 | L_LAB: 0.4362 | L_Fourier: 0.1559
+Epoch [256/300] | LR: 1.04e-05 | Loss_Total: 0.1268 | L1: 0.1179 | L_RGB: 0.3135 | L_LAB: 0.4333 | L_Fourier: 0.1518
+Epoch [257/300] | LR: 9.97e-06 | Loss_Total: 0.1310 | L1: 0.1220 | L_RGB: 0.3165 | L_LAB: 0.4272 | L_Fourier: 0.1552
+Epoch [258/300] | LR: 9.52e-06 | Loss_Total: 0.1304 | L1: 0.1214 | L_RGB: 0.3127 | L_LAB: 0.4290 | L_Fourier: 0.1543
+Epoch [259/300] | LR: 9.08e-06 | Loss_Total: 0.1267 | L1: 0.1176 | L_RGB: 0.3198 | L_LAB: 0.4294 | L_Fourier: 0.1543
+Epoch [260/300] | LR: 8.65e-06 | Loss_Total: 0.1297 | L1: 0.1207 | L_RGB: 0.3183 | L_LAB: 0.4256 | L_Fourier: 0.1551
+   >>> [Validation @ Epoch 260] PSNR: 27.84 dB | SSIM: 0.8724 | Model Checkpoint Saved!
+Epoch [261/300] | LR: 8.22e-06 | Loss_Total: 0.1277 | L1: 0.1189 | L_RGB: 0.3151 | L_LAB: 0.4126 | L_Fourier: 0.1548
+Epoch [262/300] | LR: 7.81e-06 | Loss_Total: 0.1287 | L1: 0.1200 | L_RGB: 0.3022 | L_LAB: 0.4239 | L_Fourier: 0.1481
+Epoch [263/300] | LR: 7.41e-06 | Loss_Total: 0.1251 | L1: 0.1163 | L_RGB: 0.3122 | L_LAB: 0.4087 | L_Fourier: 0.1529
+Epoch [264/300] | LR: 7.02e-06 | Loss_Total: 0.1275 | L1: 0.1189 | L_RGB: 0.3071 | L_LAB: 0.4036 | L_Fourier: 0.1480
+Epoch [265/300] | LR: 6.64e-06 | Loss_Total: 0.1259 | L1: 0.1172 | L_RGB: 0.3134 | L_LAB: 0.4142 | L_Fourier: 0.1471
+Epoch [266/300] | LR: 6.27e-06 | Loss_Total: 0.1255 | L1: 0.1169 | L_RGB: 0.3050 | L_LAB: 0.4152 | L_Fourier: 0.1453
+Epoch [267/300] | LR: 5.91e-06 | Loss_Total: 0.1259 | L1: 0.1172 | L_RGB: 0.3038 | L_LAB: 0.4170 | L_Fourier: 0.1465
+Epoch [268/300] | LR: 5.56e-06 | Loss_Total: 0.1246 | L1: 0.1161 | L_RGB: 0.3088 | L_LAB: 0.3979 | L_Fourier: 0.1507
+Epoch [269/300] | LR: 5.22e-06 | Loss_Total: 0.1244 | L1: 0.1160 | L_RGB: 0.2937 | L_LAB: 0.4000 | L_Fourier: 0.1482
+Epoch [270/300] | LR: 4.89e-06 | Loss_Total: 0.1204 | L1: 0.1119 | L_RGB: 0.3006 | L_LAB: 0.3990 | L_Fourier: 0.1469
+   >>> [Validation @ Epoch 270] PSNR: 27.70 dB | SSIM: 0.8763 | Model Checkpoint Saved!
+Epoch [271/300] | LR: 4.58e-06 | Loss_Total: 0.1255 | L1: 0.1169 | L_RGB: 0.3056 | L_LAB: 0.4053 | L_Fourier: 0.1424
+Epoch [272/300] | LR: 4.27e-06 | Loss_Total: 0.1235 | L1: 0.1153 | L_RGB: 0.2893 | L_LAB: 0.3889 | L_Fourier: 0.1433
+Epoch [273/300] | LR: 3.97e-06 | Loss_Total: 0.1217 | L1: 0.1133 | L_RGB: 0.3000 | L_LAB: 0.4003 | L_Fourier: 0.1437
+Epoch [274/300] | LR: 3.68e-06 | Loss_Total: 0.1200 | L1: 0.1116 | L_RGB: 0.3024 | L_LAB: 0.3934 | L_Fourier: 0.1431
+Epoch [275/300] | LR: 3.41e-06 | Loss_Total: 0.1189 | L1: 0.1106 | L_RGB: 0.2980 | L_LAB: 0.3970 | L_Fourier: 0.1407
+Epoch [276/300] | LR: 3.14e-06 | Loss_Total: 0.1180 | L1: 0.1097 | L_RGB: 0.2950 | L_LAB: 0.3945 | L_Fourier: 0.1406
+Epoch [277/300] | LR: 2.89e-06 | Loss_Total: 0.1228 | L1: 0.1146 | L_RGB: 0.2853 | L_LAB: 0.3883 | L_Fourier: 0.1454
+Epoch [278/300] | LR: 2.64e-06 | Loss_Total: 0.1192 | L1: 0.1110 | L_RGB: 0.2920 | L_LAB: 0.3859 | L_Fourier: 0.1394
+Epoch [279/300] | LR: 2.41e-06 | Loss_Total: 0.1222 | L1: 0.1141 | L_RGB: 0.2872 | L_LAB: 0.3941 | L_Fourier: 0.1385
+Epoch [280/300] | LR: 2.19e-06 | Loss_Total: 0.1171 | L1: 0.1091 | L_RGB: 0.2800 | L_LAB: 0.3876 | L_Fourier: 0.1391
+   >>> [Validation @ Epoch 280] PSNR: 28.00 dB | SSIM: 0.8741 | Model Checkpoint Saved!
+Epoch [281/300] | LR: 1.97e-06 | Loss_Total: 0.1214 | L1: 0.1133 | L_RGB: 0.2813 | L_LAB: 0.3903 | L_Fourier: 0.1418
+Epoch [282/300] | LR: 1.77e-06 | Loss_Total: 0.1199 | L1: 0.1117 | L_RGB: 0.2908 | L_LAB: 0.3865 | L_Fourier: 0.1401
+Epoch [283/300] | LR: 1.58e-06 | Loss_Total: 0.1156 | L1: 0.1076 | L_RGB: 0.2767 | L_LAB: 0.3880 | L_Fourier: 0.1395
+Epoch [284/300] | LR: 1.40e-06 | Loss_Total: 0.1191 | L1: 0.1112 | L_RGB: 0.2828 | L_LAB: 0.3703 | L_Fourier: 0.1350
+Epoch [285/300] | LR: 1.23e-06 | Loss_Total: 0.1181 | L1: 0.1102 | L_RGB: 0.2809 | L_LAB: 0.3704 | L_Fourier: 0.1374
+Epoch [286/300] | LR: 1.07e-06 | Loss_Total: 0.1141 | L1: 0.1061 | L_RGB: 0.2823 | L_LAB: 0.3702 | L_Fourier: 0.1394
+Epoch [287/300] | LR: 9.25e-07 | Loss_Total: 0.1151 | L1: 0.1073 | L_RGB: 0.2792 | L_LAB: 0.3634 | L_Fourier: 0.1331
+Epoch [288/300] | LR: 7.89e-07 | Loss_Total: 0.1153 | L1: 0.1075 | L_RGB: 0.2785 | L_LAB: 0.3736 | L_Fourier: 0.1343
+Epoch [289/300] | LR: 6.63e-07 | Loss_Total: 0.1169 | L1: 0.1090 | L_RGB: 0.2836 | L_LAB: 0.3757 | L_Fourier: 0.1318
+Epoch [290/300] | LR: 5.48e-07 | Loss_Total: 0.1151 | L1: 0.1074 | L_RGB: 0.2705 | L_LAB: 0.3634 | L_Fourier: 0.1389
+   >>> [Validation @ Epoch 290] PSNR: 27.83 dB | SSIM: 0.8759 | Model Checkpoint Saved!
+Epoch [291/300] | LR: 4.44e-07 | Loss_Total: 0.1157 | L1: 0.1079 | L_RGB: 0.2790 | L_LAB: 0.3682 | L_Fourier: 0.1306
+Epoch [292/300] | LR: 3.51e-07 | Loss_Total: 0.1135 | L1: 0.1058 | L_RGB: 0.2751 | L_LAB: 0.3573 | L_Fourier: 0.1328
+Epoch [293/300] | LR: 2.69e-07 | Loss_Total: 0.1113 | L1: 0.1037 | L_RGB: 0.2670 | L_LAB: 0.3620 | L_Fourier: 0.1306
+Epoch [294/300] | LR: 1.97e-07 | Loss_Total: 0.1144 | L1: 0.1067 | L_RGB: 0.2758 | L_LAB: 0.3686 | L_Fourier: 0.1307
+Epoch [295/300] | LR: 1.37e-07 | Loss_Total: 0.1116 | L1: 0.1040 | L_RGB: 0.2655 | L_LAB: 0.3638 | L_Fourier: 0.1343
+Epoch [296/300] | LR: 8.77e-08 | Loss_Total: 0.1105 | L1: 0.1028 | L_RGB: 0.2778 | L_LAB: 0.3507 | L_Fourier: 0.1325
+Epoch [297/300] | LR: 4.93e-08 | Loss_Total: 0.1143 | L1: 0.1066 | L_RGB: 0.2758 | L_LAB: 0.3625 | L_Fourier: 0.1341
+Epoch [298/300] | LR: 2.19e-08 | Loss_Total: 0.1117 | L1: 0.1041 | L_RGB: 0.2740 | L_LAB: 0.3484 | L_Fourier: 0.1344
+Epoch [299/300] | LR: 5.48e-09 | Loss_Total: 0.1127 | L1: 0.1051 | L_RGB: 0.2731 | L_LAB: 0.3544 | L_Fourier: 0.1320
+Epoch [300/300] | LR: 0.00e+00 | Loss_Total: 0.1121 | L1: 0.1047 | L_RGB: 0.2708 | L_LAB: 0.3456 | L_Fourier: 0.1269
+   >>> [Validation @ Epoch 300] PSNR: 27.90 dB | SSIM: 0.8740 | Model Checkpoint Saved!
+================================================================================
+Training Complete! Best Model saved to saved_models/lsui/spmformer-b.pth
+Final Validation Metric: PSNR: 28.35 dB | SSIM: 0.8914
+================================================================================
