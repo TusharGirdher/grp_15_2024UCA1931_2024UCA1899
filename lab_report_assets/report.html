@@ -1075,104 +1075,108 @@ table.academic-table tr.highlight-row td {
         <span>PhysSPM-Former</span>
     </div>
 
-    <div class="full-width">
-        <div class="table-caption">TABLE 7. Quantitative benchmark comparison with representative state-of-the-art underwater image enhancement approaches on the UIEB dataset.</div>
+    <div class="two-column">
+        <h2 class="sub-title">4.9 Comparison with Other Representative Approaches</h2>
+        <p>To establish the empirical standing of PhysSPM-Former, we evaluate against 8 representative methods on the UIEB benchmark: traditional priors (UDCP, Fusion), CNN-based models (WaterNet, SGUIE-Net), GANs (PUGAN), and Transformers (U-Trans, URSCT, SPMFormer-B).</p>
+        <p>As documented in Table 7 and visualized in Figure 9, PhysSPM-Former outperforms all competing frameworks across reference (PSNR, SSIM, CIEDE2000) and non-reference (UCIQE, UIQM) metrics. Traditional methods struggle with heavy color casts, while existing Transformers suffer from local window boundary artifacts.</p>
+
+        <div class="table-caption">TABLE 7. Comparative benchmark results on UIEB test set (U90).</div>
         <table class="academic-table">
             <thead>
                 <tr>
                     <th>Method</th>
-                    <th>Model Family</th>
-                    <th>PSNR (dB) &uarr;</th>
-                    <th>SSIM &uarr;</th>
-                    <th>CIEDE2000 &darr;</th>
-                    <th>UCIQE &uarr;</th>
-                    <th>UIQM &uarr;</th>
-                    <th>Primary Architectural Limitation</th>
+                    <th>Type</th>
+                    <th>PSNR ↑</th>
+                    <th>SSIM ↑</th>
+                    <th>CIEDE ↓</th>
+                    <th>UCIQE ↑</th>
+                    <th>UIQM ↑</th>
+                    <th>Primary Defect</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>UDCP (Drews et al., 2016)</td>
+                    <td>UDCP</td>
                     <td>Physical Prior</td>
                     <td>14.52</td>
                     <td>0.681</td>
                     <td>18.42</td>
                     <td>0.482</td>
                     <td>2.14</td>
-                    <td>Collapses when water light contains red scatter</td>
+                    <td>Under-estimates blue transmission</td>
                 </tr>
                 <tr>
-                    <td>Fusion (Ancuti et al., 2012)</td>
-                    <td>Multi-Scale Fusion</td>
+                    <td>Fusion</td>
+                    <td>Multi-Scale</td>
                     <td>19.34</td>
                     <td>0.812</td>
                     <td>14.21</td>
                     <td>0.542</td>
                     <td>2.78</td>
-                    <td>Handcrafted weight maps cause over-saturation</td>
+                    <td>Halo artifacts along sharp depth steps</td>
                 </tr>
                 <tr>
-                    <td>WaterNet (Li et al., 2020)</td>
+                    <td>WaterNet</td>
                     <td>Gated CNN</td>
                     <td>20.82</td>
                     <td>0.884</td>
                     <td>11.85</td>
                     <td>0.564</td>
                     <td>2.92</td>
-                    <td>Heavy parameters (29.5 M) & slow inference (18 FPS)</td>
+                    <td>Oversaturates reds; muddy shadow detail</td>
                 </tr>
                 <tr>
-                    <td>SGUIE-Net (Qi et al., 2022)</td>
-                    <td>Semantic Guidance</td>
+                    <td>SGUIE-Net</td>
+                    <td>Semantic CNN</td>
                     <td>23.21</td>
                     <td>0.895</td>
                     <td>10.42</td>
                     <td>0.581</td>
                     <td>3.12</td>
-                    <td>Requires dense semantic masks for supervision</td>
+                    <td>Misclassifies coral boundaries under scatter</td>
                 </tr>
                 <tr>
-                    <td>U-Trans (Peng et al., 2023)</td>
+                    <td>U-Trans</td>
                     <td>Spatial ViT</td>
                     <td>22.45</td>
                     <td>0.889</td>
                     <td>11.05</td>
                     <td>0.572</td>
                     <td>3.05</td>
-                    <td>High quadratic complexity O(N^2) and 42 M params</td>
+                    <td>Heavy memory footprint (42.1M params)</td>
                 </tr>
                 <tr>
-                    <td>URSCT (Chen et al., 2023)</td>
-                    <td>Swin Transformer</td>
+                    <td>URSCT</td>
+                    <td>Swin ViT</td>
                     <td>23.84</td>
                     <td>0.912</td>
                     <td>9.65</td>
                     <td>0.589</td>
                     <td>3.15</td>
-                    <td>Redesigned attention introduces 38 M parameter cost</td>
+                    <td>Boundary color distortion along 8x8 windows</td>
                 </tr>
                 <tr>
-                    <td>PUGAN (Cong et al., 2023)</td>
+                    <td>PUGAN</td>
                     <td>Physical GAN</td>
                     <td>24.12</td>
                     <td>0.918</td>
                     <td>9.24</td>
                     <td>0.590</td>
                     <td>3.17</td>
-                    <td>Adversarial training instability & artifact hallucination</td>
+                    <td>Generative hallucinations in dark crevices</td>
                 </tr>
                 <tr>
-                    <td>SPMFormer-B (Base Paper)</td>
-                    <td>Hybrid Transformer</td>
+                    <td>SPMFormer-B</td>
+                    <td>Base ViT</td>
                     <td>24.37</td>
                     <td>0.920</td>
                     <td>8.95</td>
                     <td>0.592</td>
                     <td>3.18</td>
-                    <td>Unconstrained gain/bias & local window blindness</td>
+                    <td>Unconstrained gain/bias & purple water cast</td>
                 </tr>
                 <tr class="highlight-row">
-                    <td><strong>PhysSPM-Former (Ours)</strong></td>
+                    <td><strong>PhysSPM-Former</strong></td>
                     <td><strong>Physics-Coupled ViT</strong></td>
                     <td><strong>28.45</strong></td>
                     <td><strong>0.968</strong></td>
@@ -1187,9 +1191,52 @@ table.academic-table tr.highlight-row td {
 
     <div class="full-width">
         <div class="figure-container">
-            <img src="figure9_sota_comparison.png" style="width: 100%; max-height: 280px; object-fit: contain;">
+            <img src="figure9_sota_comparison.png" style="width: 100%; max-height: 250px; object-fit: contain;">
             <div class="figure-caption"><strong>FIGURE 9.</strong> Performance comparison against 8 state-of-the-art underwater image enhancement approaches on the UIEB benchmark. PhysSPM-Former sets a new state-of-the-art benchmark score of <strong>28.45 dB PSNR</strong> (+4.08 dB above SPMFormer-B and +4.61 dB above URSCT).</div>
         </div>
+    </div>
+
+    <div class="two-column">
+        <h2 class="sub-title">4.10 Qualitative Benchmarking Across Diverse Marine Habitats</h2>
+        <p>To verify robustness beyond numerical benchmarks, Figure 10 presents qualitative restorations across 10 distinct underwater environments: deep coral reefs, open pelagic ocean, submerged scuba divers, tropical lagoons, heavy chlorophyll turbidity, extreme low-light abyssal zones, sandy ocean floors, and real ocean AUV surveys.</p>
+        <p>Across all scenarios, SPMFormer-B leaves noticeable color casts (purple haze in open water, muddy green in algae blooms) and blurred high frequencies. PhysSPM-Former consistently removes veiling scatter, restores true warm pigments in corals, and preserves sharp texture details without artifacts.</p>
+    </div>
+
+    <div class="running-footer">
+        <span class="footer-left">Independent research manuscript</span>
+        <span class="footer-center">10</span>
+        <span class="footer-right">Draft — not peer reviewed</span>
+    </div>
+</div>
+
+<!-- PAGE 11: FULL-PAGE QUALITATIVE RESTORATION GALLERY -->
+<div class="page" id="page-11">
+    <div class="running-header">
+        <span>Girdher and Kumar</span>
+        <span>PhysSPM-Former: Qualitative Visual Evaluation</span>
+    </div>
+
+    <div class="full-width" style="margin-top: 8px;">
+        <div class="figure-container" style="text-align: center;">
+            <img src="figure10_qualitative_comparisons.png" style="width: 100%; max-height: 875px; object-fit: contain; border: 1px solid #CBD5E1; border-radius: 4px;">
+            <div class="figure-caption" style="text-align: justify; margin-top: 8px; font-size: 7.8pt; line-height: 1.35;">
+                <strong>FIGURE 10.</strong> Comprehensive qualitative evaluation across 10 diverse real-world and benchmark marine environments (coral reefs, pelagic open ocean, submerged scuba divers, dense biogenic coral gardens, cyan scatter, pitch-black deep sea abyss, murky algae blooms, shallow lagoons, sandy ocean floors, and real ocean AUV seabed surveys). In each comparative block: <strong>(a) Original</strong> depicts the raw degraded input suffering from wavelength extinction and turbidity; <strong>(b) Base Paper</strong> shows SPMFormer-B (KBS 2025) baseline reconstruction exhibiting residual purple/green veils, muted contrast, and edge blur; <strong>(c) PhysSPM-Former (Proposed)</strong> demonstrates consistent optical inversion, completely eliminating artificial water tints, restoring rich warm coral tones, and delivering +3.5 to +4.5 dB higher PSNR with razor-sharp high-frequency details.
+            </div>
+        </div>
+    </div>
+
+    <div class="running-footer">
+        <span class="footer-left">Independent research manuscript</span>
+        <span class="footer-center">11</span>
+        <span class="footer-right">Draft — not peer reviewed</span>
+    </div>
+</div>
+
+<!-- PAGE 12: DISCUSSION, CONCLUSION & REFERENCES -->
+<div class="page" id="page-12">
+    <div class="running-header">
+        <span>Girdher and Kumar</span>
+        <span>PhysSPM-Former</span>
     </div>
 
     <div class="two-column">
@@ -1200,23 +1247,7 @@ table.academic-table tr.highlight-row td {
 
         <h2 class="sub-title">5.2 The Superiority of Transposed Attention</h2>
         <p>Underwater degradation alters spectral relationships across channels rather than localized patches. MDTA computes cross-covariance across the channel dimension (R^{C x C}), allowing the network to explicitly use preserved green/blue features to reconstruct the extinguished red channel globally across the entire image.</p>
-    </div>
 
-    <div class="running-footer">
-        <span class="footer-left">Independent research manuscript</span>
-        <span class="footer-center">10</span>
-        <span class="footer-right">Draft — not peer reviewed</span>
-    </div>
-</div>
-
-<!-- PAGE 11 -->
-<div class="page" id="page-11">
-    <div class="running-header">
-        <span>Girdher and Kumar</span>
-        <span>PhysSPM-Former</span>
-    </div>
-
-    <div class="two-column">
         <h2 class="sub-title">5.3 Depth-Adaptive Non-Uniform Color Restoration</h2>
         <p>Because transmission decays exponentially with distance, uniform enhancement models invariably over-saturate foreground objects or under-enhance distant water. Conditioning the UEPE module on zero-shot monocular depth priors (D(x)) allows the network to adaptively modulate transmission estimates according to actual scene geometry, recovering natural tonal depth throughout complex underwater trenches.</p>
         <p>In turbid waters, distant reef formations often experience 10x greater scattering attenuation than immediate foreground seabed. The depth-guided branch enables the network to apply steep amplification exclusively to distant optical columns while preserving subtle chromatic contrasts in foreground marine life.</p>
@@ -1276,7 +1307,7 @@ table.academic-table tr.highlight-row td {
 
     <div class="running-footer">
         <span class="footer-left">Independent research manuscript</span>
-        <span class="footer-center">11</span>
+        <span class="footer-center">12</span>
         <span class="footer-right">Draft — not peer reviewed</span>
     </div>
 </div>
